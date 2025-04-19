@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello Cursor</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>간단한 TODO 앱</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, Cursor World!</h1>
-    <button onclick="sayHello()">Click me</button>
-    <script src="script.js"></script>
+  <h1>📝 내 할 일</h1>
+  <div class="input-area">
+    <input type="text" id="todo-input" placeholder="할 일을 입력하세요" />
+    <button onclick="addTodo()">추가</button>
+  </div>
+  <ul id="todo-list"></ul>
+
+  <script src="script.js"></script>
 </body>
 </html>
